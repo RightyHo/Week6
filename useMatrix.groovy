@@ -32,4 +32,44 @@ String pOut = cMat.toString();
 
 System.out.println(pOut);
 
+cMat.prettyPrint();
 
+System.out.println("This Array should be marked as symmetrical...");
+Matrix symArray = new Matrix(1,7);
+symArray.setRow(0,"1,3,5,7,5,3,1");
+symArray.prettyPrint();
+if(symArray.symmetry()){
+	System.out.println("Indeed that array was symmetrical!");
+} else {
+	System.out.println("That array was NOT symmetrical!");
+}
+
+System.out.println("This Matrix should be marked as symmetrical...");
+Matrix symMatrix = new Matrix(4,4);
+symMatrix.setRow(0,"2,4,6,8");
+symMatrix.setRow(1,"4,9,3,7");
+symMatrix.setRow(2,"6,3,6,6");
+symMatrix.setRow(3,"8,7,6,5");
+symMatrix.prettyPrint();
+if(symMatrix.symmetry()){
+	System.out.println("Indeed that Matrix was symmetrical!");
+} else {
+	System.out.println("That Matrix was NOT symmetrical!");
+}
+if(symMatrix.isTri()){
+	System.out.println("That Matrix was triangular!");
+} else {
+	System.out.println("That Matrix was NOT triangular!");
+}
+
+System.out.println("This Matrix should be marked as Triangular...");
+Matrix triMatrix = new Matrix(3,3);
+triMatrix.setRow(0,"2,4,6");
+triMatrix.setRow(1,"0,3,7");
+triMatrix.setRow(2,"0,0,8");
+triMatrix.prettyPrint();
+if(triMatrix.isTri()){
+	System.out.println("That Matrix was triangular!");
+} else {
+	System.out.println("That Matrix was NOT triangular!");
+}
