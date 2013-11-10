@@ -26,7 +26,7 @@ int column = Integer.parseInt(System.console().readLine());
 System.out.println("Key in a string of integers of length " + x + " and separate with commas: ");
 String sCol = System.console().readLine();
 
-cMat.setRow(column,sCol);
+cMat.setColumn(column,sCol);
 
 String pOut = cMat.toString();
 
