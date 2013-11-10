@@ -8,6 +8,7 @@ public class MatrixChecker {
 		yLength = 0;
 	}
 	public	boolean	isSymmetrical(int[] checkArray){
+		System.out.println("check array symetry method was called");	//debugging
 		boolean result = true;
 		xLength = checkArray.length;
 		for(int i=0;i<xLength/2;i++){
@@ -19,6 +20,7 @@ public class MatrixChecker {
 		return result;
 	}
 	public	boolean	isSymmetrical(int[][] checkMatrix){
+		System.out.println("check MATRIX symetry method was called");	//debugging
 		boolean result = true;
 		xLength = checkMatrix[0].length;
 		yLength = checkMatrix[1].length;
